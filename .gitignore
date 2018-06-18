@@ -1,0 +1,4 @@
+node_modules/
+src/models/config/config.json
+*.log
+.DS_Store
