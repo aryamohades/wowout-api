@@ -11,9 +11,12 @@ const start = async () => {
 
     await models.sequelize.sync({ force: true });
 
-    const port = process.env.PORT;
+    await models.fixtures.loadFile(
+      path.join(__dirname, '/models/fixtures/*.json'),
+      models
+    );
 
-    // await models.fixtures.loadFiles('models/fixtures/*.json', models);
+    const port = process.env.PORT;
 
     const server = http.createServer(app);
 

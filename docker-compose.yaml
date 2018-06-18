@@ -4,7 +4,7 @@ services:
     build: .
     command: yarn run dev
     volumes:
-      - .:/usr/app/
+      - .:/usr/wowout/
       - /usr/app/node_modules
     ports:
       - "3000:3000"
