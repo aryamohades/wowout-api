@@ -8,5 +8,6 @@ require('./register')(router);
 require('./login')(router);
 require('./user')(router);
 require('./wowout')(router);
+require('./shameOnYou')(router);
 
 module.exports = router;
