@@ -1,0 +1,12 @@
+[
+    {
+        "model": "ShameOnYou",
+        "data": {
+            "id": 1,
+            "description": "For being lame",
+            "receiver_id": 2,
+            "giver_id": 1
+        }
+    }
+]
+  
