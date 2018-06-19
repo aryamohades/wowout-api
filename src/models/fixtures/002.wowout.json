@@ -1,0 +1,11 @@
+[
+  {
+    "model": "Wowout",
+    "data": {
+      "id": 1,
+      "description": "For being awesome",
+      "receiver_id": 1,
+      "giver_id": 2
+    }
+  }
+]

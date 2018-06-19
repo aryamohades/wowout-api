@@ -1,5 +1,6 @@
 const {
-  getAuthUser
+  getAuthUser,
+  getUsers
 } = require('../middleware').user;
 
 const { requireAuth } = require('../middleware');
@@ -9,4 +10,6 @@ module.exports = (router) => {
     requireAuth,
     getAuthUser
   ]);
+
+  router.get('/api/users', getUsers);
 };

@@ -6,12 +6,6 @@ const DataTypes = Sequelize.DataTypes;
 
 module.exports = (sequelize) => {
   const User = sequelize.define('user', {
-    userId: {
-      field: 'user_id',
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
-      unique: true
-    },
     email: {
       field: 'email',
       type: DataTypes.STRING,
@@ -20,8 +14,8 @@ module.exports = (sequelize) => {
         isEmail: true
       }
     },
-    username: {
-      field: 'username',
+    name: {
+      field: 'name',
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
@@ -36,6 +30,21 @@ module.exports = (sequelize) => {
         notEmpty: true
       }
     },
+    hasWowout: {
+      field: 'has_wowout',
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    },
+    hasShame: {
+      field: 'has_shame',
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    },
+    image: {
+      field: 'image',
+      type: DataTypes.STRING,
+      defaultValue: 'user.jpg'
+    },
     createdAt: {
       field: 'created_at',
       type: DataTypes.DATE,
@@ -47,7 +56,6 @@ module.exports = (sequelize) => {
         unique: true,
         fields: [
           'email',
-          'username'
         ]
       }
     ],

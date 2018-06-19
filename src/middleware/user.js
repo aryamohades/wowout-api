@@ -8,7 +8,8 @@ const {
   Video,
   Organization,
   Tag,
-  Rating
+  Rating,
+  Wowout
 } = require('../models');
 
 const getAuthUser = response({
@@ -151,13 +152,31 @@ const getRatings = find({
   }
 });
 
+const getUsers = find({
+  model: User,
+  name: 'users',
+  method: 'findAll',
+  response: true,
+  include: [
+    {
+      model: Wowout,
+      as: 'wowoutsReceived',
+      attributes: [
+        'description'
+      ]
+    },
+    {
+      model: Wowout,
+      as: 'wowoutsGiven',
+      attributes: [
+        'description'
+      ]
+    }
+  ]
+});
+
 module.exports = {
+  getUsers,
   getAuthUser,
-  getByUsername,
-  getVideos,
-  getTechnologies,
-  getTags,
-  getFollowers,
-  getFollowing,
-  getRatings
+  getByUsername
 };

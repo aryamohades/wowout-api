@@ -9,7 +9,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "dev": "node ./src/server.js",
+    "dev": "nodemon --watch src ./src/server.js",
     "lint": "./node_modules/.bin/eslint src/**",
     "clean": "rm -rf node_modules && yarn cache clean && yarn",
     "nsp": "nsp check --output summary",
@@ -24,6 +24,7 @@
     "helmet": "^3.11.0",
     "jsonwebtoken": "^8.1.1",
     "morgan": "^1.9.0",
+    "nodemon": "^1.17.5",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.1",
     "passport-local": "^1.0.0",

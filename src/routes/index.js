@@ -7,5 +7,6 @@ const router = express.Router();
 require('./register')(router);
 require('./login')(router);
 require('./user')(router);
+require('./wowout')(router);
 
 module.exports = router;

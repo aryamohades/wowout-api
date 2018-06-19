@@ -2,18 +2,18 @@
   {
     "model": "User",
     "data": {
-      "userId": "0852acdc-52fa-4d74-87e2-9fdad6cafaef",
+      "id": 1,
       "email": "kenny@test.com",
-      "username": "BigSeft",
+      "name": "BigSeft",
       "password": "12345"
     }
   },
   {
     "model": "User",
     "data": {
-      "userId": "f990a381-d38f-40fd-bd41-0b1a07db78df",
+      "id": 2,
       "email": "test@test.com",
-      "username": "taapesh",
+      "name": "taapesh",
       "password": "12345"
     }
   }

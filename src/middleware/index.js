@@ -4,6 +4,7 @@ const error = require('./error');
 const login = require('./login');
 const register = require('./register');
 const user = require('./user');
+const wowout = require('./wowout');
 
 module.exports = {
   requireLogin,
@@ -11,5 +12,6 @@ module.exports = {
   error,
   login,
   register,
-  user
+  user,
+  wowout
 };
