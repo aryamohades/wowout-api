@@ -4,9 +4,9 @@ const serialize = require('./serialize');
 const DataTypes = Sequelize.DataTypes;
 
 module.exports = (sequelize) => {
-  const Wowout = sequelize.define('wowout', {
+  const ShameOnYou = sequelize.define('shameOnYou', {
     wowoutId: {
-      field: 'wowout_id',
+      field: 'shameOnYou_id',
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       unique: true
@@ -20,7 +20,7 @@ module.exports = (sequelize) => {
       }
     },
     updoots: {
-      field: 'updoots',
+      field: 'downdoots',
       type: DataTypes.INTEGER,
       defaultValue: 1
     },
@@ -38,7 +38,7 @@ module.exports = (sequelize) => {
       {
         unique: true,
         fields: [
-          'wowout_id',
+          'shameOnYou_id',
         ]
       }
     ],
@@ -46,7 +46,7 @@ module.exports = (sequelize) => {
     underscored: true
   });
 
-  Wowout.json = serialize.wowout;
+  ShameOnYou.json = serialize.shameOnYou;
 
-  return Wowout;
+  return ShameOnYou;
 };

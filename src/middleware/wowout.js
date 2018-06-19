@@ -16,11 +16,11 @@ const getWowouts = find({
   include: [
     {
       model: User,
-      as: 'giver'
+      as: 'wowoutGiver'
     },
     {
       model: User,
-      as: 'receiver'
+      as: 'wowoutReceiver'
     }
   ]
 });

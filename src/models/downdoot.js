@@ -4,29 +4,12 @@ const serialize = require('./serialize');
 const DataTypes = Sequelize.DataTypes;
 
 module.exports = (sequelize) => {
-  const Wowout = sequelize.define('wowout', {
-    wowoutId: {
-      field: 'wowout_id',
+  const Downdoot = sequelize.define('downdoot', {
+    downdootId: {
+      field: 'downdoot_id',
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       unique: true
-    },
-    description: {
-      field: 'description',
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notEmpty: true
-      }
-    },
-    updoots: {
-      field: 'updoots',
-      type: DataTypes.INTEGER,
-      defaultValue: 1
-    },
-    active: {
-      field: 'active',
-      type: DataTypes.BOOLEAN
     },
     createdAt: {
       field: 'created_at',
@@ -38,7 +21,7 @@ module.exports = (sequelize) => {
       {
         unique: true,
         fields: [
-          'wowout_id',
+          'downdoot_id',
         ]
       }
     ],
@@ -46,7 +29,7 @@ module.exports = (sequelize) => {
     underscored: true
   });
 
-  Wowout.json = serialize.wowout;
+  Downdoot.json = serialize.downdoot;
 
-  return Wowout;
+  return Downdoot;
 };
