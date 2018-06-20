@@ -3,9 +3,10 @@
     "model": "User",
     "data": {
       "id": 1,
-      "email": "test2@test.com",
-      "name": "Ariel",
-      "password": "12345"
+      "email": "ani@test.com",
+      "name": "Ani",
+      "password": "12345",
+      "image": "ani.jpg"
     }
   },
   {
@@ -17,6 +18,196 @@
       "password": "12345",
       "image": "arya.jpg",
       "points": 15
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 4,
+      "email": "adam@test.com",
+      "name": "Adam",
+      "password": "12345",
+      "image": "adam.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 5,
+      "email": "britt@test.com",
+      "name": "Britt",
+      "password": "12345",
+      "image": "britt.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 6,
+      "email": "christine@test.com",
+      "name": "Christine",
+      "password": "12345",
+      "image": "christine.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 7,
+      "email": "glen@test.com",
+      "name": "Glen",
+      "password": "12345",
+      "image": "glen.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 8,
+      "email": "kelly@test.com",
+      "name": "Kelly",
+      "password": "12345",
+      "image": "kelly.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 9,
+      "email": "kevin@test.com",
+      "name": "Kevin",
+      "password": "12345",
+      "image": "kevin.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id":10,
+      "email": "nelly@test.com",
+      "name": "Nelly",
+      "password": "12345",
+      "image": "nelly.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 11,
+      "email": "paul@test.com",
+      "name": "Paul",
+      "password": "12345",
+      "image": "paul.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 12,
+      "email": "rakesh@test.com",
+      "name": "Rakesh",
+      "password": "12345",
+      "image": "rakesh.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 13,
+      "email": "rashi@test.com",
+      "name": "Rashi",
+      "password": "12345",
+      "image": "rashi.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 14,
+      "email": "roseann@test.com",
+      "name": "Roseann",
+      "password": "12345",
+      "image": "roseann.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 15,
+      "email": "rutvee@test.com",
+      "name": "Rutvee",
+      "password": "12345",
+      "image": "rutvee.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 16,
+      "email": "shel@test.com",
+      "name": "Shel",
+      "password": "12345",
+      "image": "shel.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 17,
+      "email": "sumit@test.com",
+      "name": "Sumit",
+      "password": "12345",
+      "image": "sumit.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 18,
+      "email": "tay@test.com",
+      "name": "Tay",
+      "password": "12345",
+      "image": "tay.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 19,
+      "email": "thom@test.com",
+      "name": "Thom",
+      "password": "12345",
+      "image": "thom.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 20,
+      "email": "tim@test.com",
+      "name": "Tim",
+      "password": "12345",
+      "image": "tim.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 21,
+      "email": "tommy@test.com",
+      "name": "Tommy",
+      "password": "12345",
+      "image": "tommy.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 22,
+      "email": "wayne@test.com",
+      "name": "Wayne",
+      "password": "12345",
+      "image": "wayne.jpg"
     }
   }
 ]

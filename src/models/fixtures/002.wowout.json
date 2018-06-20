@@ -2,16 +2,16 @@
   {
     "model": "Wowout",
     "data": {
-      "description": "For being awesome",
-      "wowout_receiver_id": 1,
-      "wowout_giver_id": 2,
-      "updoots": 2
+      "description": "For being the search expert!",
+      "wowout_receiver_id": 5,
+      "wowout_giver_id": 19,
+      "updoots": 15
     }
   },
   {
     "model": "Wowout",
     "data": {
-      "description": "For fixing search",
+      "description": "For being awesome",
       "wowout_receiver_id": 1,
       "wowout_giver_id": 2,
       "updoots": 5
@@ -20,28 +20,46 @@
   {
     "model": "Wowout",
     "data": {
-      "description": "For being good at Super Smash Bros Melee",
-      "wowout_receiver_id": 2,
-      "wowout_giver_id": 1,
-      "updoots": 8
+      "description": "For all the pricing and discount work!",
+      "wowout_receiver_id": 22,
+      "wowout_giver_id": 7,
+      "updoots": 6
     }
   },
   {
     "model": "Wowout",
     "data": {
-      "description": "Who knows",
-      "wowout_receiver_id": 2,
+      "description": "For bringing us tacos",
+      "wowout_receiver_id": 14,
       "wowout_giver_id": 1,
-      "updoots": 8
+      "updoots": 7
     }
   },
   {
     "model": "Wowout",
     "data": {
-      "description": "For being awesome again",
-      "wowout_receiver_id": 1,
-      "wowout_giver_id": 2,
-      "active": false
+      "description": "For having a baby",
+      "wowout_receiver_id": 12,
+      "wowout_giver_id": 15,
+      "updoots": 2                 
+    }
+  },
+  {
+    "model": "Wowout",
+    "data": {
+      "description": "For all the help on the thing",
+      "wowout_receiver_id": 19,
+      "wowout_giver_id": 20,
+      "updoots": 2
+    }
+  },
+  {
+    "model": "Wowout",
+    "data": {
+      "description": "For ebing awesome and fixing all the bugs I find",
+      "wowout_receiver_id": 7,
+      "wowout_giver_id": 10,
+      "updoots": 10
     }
   }
 ]
