@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const fixtures = require('sequelize-fixtures');
 
-const dbConnectionUrl = process.env.DB_URL;
+const dbConnectionUrl = process.env.DATABASE_URL;
 
 let sequelize;
 

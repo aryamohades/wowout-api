@@ -12,8 +12,8 @@
     "dev": "nodemon --watch src ./src/server.js",
     "lint": "./node_modules/.bin/eslint src/**",
     "clean": "rm -rf node_modules && yarn cache clean && yarn",
-    "nsp": "nsp check --output summary",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
