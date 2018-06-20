@@ -5,7 +5,7 @@
             "description": "For leaving us",
             "shame_receiver_id": 18,
             "shame_giver_id": 9,
-            "updoots": 10
+            "updoots": 16
         }
     },
     {
@@ -23,7 +23,7 @@
             "description": "For always choosing bad music",
             "shame_receiver_id": 21,
             "shame_giver_id": 20,
-            "updoots": 10
+            "updoots": 9
         }
     },
     {
@@ -32,7 +32,7 @@
             "description": "For making me do the bulk of work on this project",
             "shame_receiver_id": 7,
             "shame_giver_id": 2,
-            "updoots": 10
+            "updoots": 7
         }
     },
     {
@@ -49,7 +49,7 @@
         "data": {
             "description": "For forgetting tacos that one time",
             "shame_receiver_id": 1,
-            "shame_giver_id": 4,
+            "shame_giver_id": 8,
             "updoots": 10
         }
     }
