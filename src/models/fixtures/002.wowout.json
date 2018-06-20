@@ -56,10 +56,19 @@
   {
     "model": "Wowout",
     "data": {
-      "description": "For ebing awesome and fixing all the bugs I find",
+      "description": "For being awesome and fixing all the bugs I find",
       "wowout_receiver_id": 7,
       "wowout_giver_id": 10,
       "updoots": 10
+    }
+  },
+  {
+    "model": "Wowout",
+    "data": {
+      "description": "For doing all the things!",
+      "wowout_receiver_id": 4,
+      "wowout_giver_id": 15,
+      "updoots": 11
     }
   }
 ]
