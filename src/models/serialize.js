@@ -15,17 +15,19 @@ const serialize = (convert) => (data) => {
 const user = serialize((data) => ({
   id: data.id,
   email: data.email,
-  username: data.username,
+  name: data.name,
+  image: data.image,
   createdAt: data.createdAt,
   wowoutsReceived: data.wowoutsReceived,
   wowoutsGiven: data.wowoutsGiven
 }));
 
-const wowout = serialize((data) => ({
-  data: data
-}));
+const wowout = serialize((data) => data);
+
+const shameOnYou = serialize(data => data);
 
 module.exports = {
   user,
-  wowout
+  wowout,
+  shameOnYou
 };

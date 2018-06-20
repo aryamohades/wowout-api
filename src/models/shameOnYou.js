@@ -5,12 +5,6 @@ const DataTypes = Sequelize.DataTypes;
 
 module.exports = (sequelize) => {
   const ShameOnYou = sequelize.define('shameOnYou', {
-    wowoutId: {
-      field: 'shameOnYou_id',
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
-      unique: true
-    },
     description: {
       field: 'description',
       type: DataTypes.STRING,
@@ -26,7 +20,8 @@ module.exports = (sequelize) => {
     },
     active: {
       field: 'active',
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
+      defaultValue: true
     },
     createdAt: {
       field: 'created_at',
@@ -34,14 +29,6 @@ module.exports = (sequelize) => {
       defaultValue: DataTypes.NOW
     }
   }, {
-    indexes: [
-      {
-        unique: true,
-        fields: [
-          'shameOnYou_id',
-        ]
-      }
-    ],
     timestamps: false,
     underscored: true
   });

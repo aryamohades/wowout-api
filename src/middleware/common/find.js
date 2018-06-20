@@ -29,7 +29,7 @@ const getValues = (req, fields) => {
       defaultValue
     } = fields[field];
 
-    if (value) {
+    if (value !== undefined) {
       val = value;
     } else if (user) {
       val = req.user[field];
@@ -41,7 +41,7 @@ const getValues = (req, fields) => {
       val = req.query[field];
     }
 
-    val = val || defaultValue;
+    val = val !== undefined ? val : defaultValue;
 
     if (val === undefined) {
       if (!optional) {

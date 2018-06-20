@@ -2,11 +2,19 @@
     {
         "model": "ShameOnYou",
         "data": {
-            "id": 1,
             "description": "For being lame",
-            "receiver_id": 2,
-            "giver_id": 1
+            "shame_receiver_id": 2,
+            "shame_giver_id": 1,
+            "updoots": 3
+        }
+    },
+    {
+        "model": "ShameOnYou",
+        "data": {
+            "description": "For being lame again",
+            "shame_receiver_id": 2,
+            "shame_giver_id": 1,
+            "active": false
         }
     }
 ]
-  

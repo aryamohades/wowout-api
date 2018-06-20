@@ -10,4 +10,8 @@ require('./user')(router);
 require('./wowout')(router);
 require('./shameOnYou')(router);
 
+router.post('/api/finish', async (req, res) => {
+
+});
+
 module.exports = router;

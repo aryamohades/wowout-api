@@ -49,6 +49,11 @@ module.exports = (sequelize) => {
       field: 'created_at',
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW
+    },
+    points: {
+      field: 'points',
+      type: DataTypes.INTEGER,
+      defaultValue: 0
     }
   }, {
     indexes: [

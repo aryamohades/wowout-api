@@ -33,7 +33,7 @@ User.hasMany(Wowout, {
 
 User.hasMany(Wowout, {
   as: 'wowoutsGiven',
-  foreignKey: 'wowout_greceiver_id'
+  foreignKey: 'wowout_receiver_id'
 });
 
 // Wowout => User
@@ -75,12 +75,6 @@ User.hasOne(Updoot, {
   foreignKey: 'updoot_id'
 });
 
-// Wowout => Updoot
-Wowout.hasMany(Updoot, {
-  as: 'updootsReceived',
-  foreignKey: 'updoot_id'
-});
-
 // User => Downdoot
 User.hasOne(Downdoot, {
   as: 'downdootGiven',
@@ -93,6 +87,15 @@ ShameOnYou.hasMany(Downdoot, {
   foreignKey: 'downdoot_id'
 });
 
+Updoot.belongsTo(Wowout, {
+  as: 'wowout',
+  foreignKey: 'wowout_id'
+});
+
+Downdoot.belongsTo(ShameOnYou, {
+  as: 'shame',
+  foreignKey: 'shame_id'
+});
 
 module.exports = {
   fixtures,
@@ -101,5 +104,6 @@ module.exports = {
   User,
   Wowout,
   Updoot,
-  Downdoot
+  Downdoot,
+  ShameOnYou
 };

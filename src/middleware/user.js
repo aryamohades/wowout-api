@@ -1,3 +1,6 @@
+const axios = require('axios');
+const uuid = require('uuid/v4');
+
 const {
   find,
   response
@@ -9,12 +12,49 @@ const {
   Organization,
   Tag,
   Rating,
-  Wowout
+  Wowout,
+  Updoot
 } = require('../models');
 
-const getAuthUser = response({
-  model: User,
-  instance: 'user'
+const giftbitKey = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJTSEEyNTYifQ==.ZFE0VjdQVVAyY2laOExuTkRjMkxRK1BrQnJkNXVUc25OUUJ4TWVKNU5DTzVJOTl1Mmw5MERrWHVTcGpNaVFuVkZGSXlaZ244di9Wdm5QUVBnbE9lM0JWTUx2V2ZTTFNsdFVIRkxkODlTb2ZTVDBMa0k0emg5cXFsU2k3ZzQzZUI=.yKQr7BbZ3EHTCj6WL8Jbgr9MCm6ZtjrGdAGK2iJyPcs='
+
+const getAuthUser = async (req, res, next) => {
+  try {
+    const updoot = await req.user.getUpdootGiven();
+    const wowoutsReceived = await req.user.getWowoutsReceived();
+    const wowoutsGiven = await req.user.getWowoutsGiven();
+
+    res.status(200).send({
+      user: req.user,
+      updoot,
+      wowoutsReceived,
+      wowoutsGiven
+    });
+  } catch (e) {
+    res.status(500).send({
+      message: 'Something went wrong: ' + e.message
+    });
+  }
+};
+
+const getUserWowouts = find({
+  model: Wowout,
+  name: 'wowouts',
+  response: true,
+  from: {
+    instance: 'user',
+    method: 'getWowouts'
+  }
+});
+
+const getUserUpdoots = find({
+  model: Updoot,
+  name: 'updoot',
+  response: true,
+  from: {
+    instance: 'user',
+    method: 'getUpdoot'
+  }
 });
 
 const getByUsername = find({
@@ -175,8 +215,46 @@ const getUsers = find({
   ]
 });
 
+const redeemPoints = async (req, res) => {
+  const cost = req.body.cost;
+
+  try {
+    await axios({
+      method: 'post',
+      url: 'https://api-testbed.giftbit.com/papi/v1/campaign',
+      data: {
+        subject: 'Your Kibo WOWOUT Reward',
+        message: 'Enjoy!',
+        delivery_type: 'GIFTBIT_EMAIL',
+        contacts: [{ email: 'arya.mohades@kibocommerce.com', firstname: 'Arya', lastname: 'Mohades' }],
+        price_in_cents: 2500,
+        brand_codes: ['amazonus'],
+        id: uuid(),
+        expiry: '2018-06-29'
+      },
+      headers: {
+        Authorization: 'Bearer ' + giftbitKey,
+        'Content-Type': 'application/json'
+      }
+    });
+
+    await req.user.decrement('points', { by: cost });
+
+    res.status(200).send({
+      message: 'Redeemed points successfully'
+    });
+
+  } catch (e) {
+    res.status(500).send({
+      error: e.message
+    });
+  }
+
+};
+
 module.exports = {
   getUsers,
   getAuthUser,
-  getByUsername
+  getByUsername,
+  redeemPoints
 };

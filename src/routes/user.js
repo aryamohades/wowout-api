@@ -1,6 +1,7 @@
 const {
   getAuthUser,
-  getUsers
+  getUsers,
+  redeemPoints
 } = require('../middleware').user;
 
 const { requireAuth } = require('../middleware');
@@ -10,6 +11,8 @@ module.exports = (router) => {
     requireAuth,
     getAuthUser
   ]);
+
+  router.post('/api/redeem', requireAuth, redeemPoints);
 
   router.get('/api/users', getUsers);
 };

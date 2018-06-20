@@ -2,10 +2,46 @@
   {
     "model": "Wowout",
     "data": {
-      "id": 1,
       "description": "For being awesome",
-      "receiver_id": 1,
-      "giver_id": 2
+      "wowout_receiver_id": 1,
+      "wowout_giver_id": 2,
+      "updoots": 2
+    }
+  },
+  {
+    "model": "Wowout",
+    "data": {
+      "description": "For fixing search",
+      "wowout_receiver_id": 1,
+      "wowout_giver_id": 2,
+      "updoots": 5
+    }
+  },
+  {
+    "model": "Wowout",
+    "data": {
+      "description": "For being good at Super Smash Bros Melee",
+      "wowout_receiver_id": 2,
+      "wowout_giver_id": 1,
+      "updoots": 8
+    }
+  },
+  {
+    "model": "Wowout",
+    "data": {
+      "description": "Who knows",
+      "wowout_receiver_id": 2,
+      "wowout_giver_id": 1,
+      "updoots": 8
+    }
+  },
+  {
+    "model": "Wowout",
+    "data": {
+      "description": "For being awesome again",
+      "wowout_receiver_id": 1,
+      "wowout_giver_id": 2,
+      "active": false
     }
   }
 ]
