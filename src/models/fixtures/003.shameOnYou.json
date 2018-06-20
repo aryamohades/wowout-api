@@ -39,7 +39,7 @@
         "model": "ShameOnYou",
         "data": {
             "description": "For losing HQ for us",
-            "shame_receiver_id": 3,
+            "shame_receiver_id": 20,
             "shame_giver_id": 14,
             "updoots": 5
         }
