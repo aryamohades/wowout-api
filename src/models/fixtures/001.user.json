@@ -209,5 +209,25 @@
       "password": "12345",
       "image": "wayne.jpg"
     }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 23,
+      "email": "sara@test.com",
+      "name": "Sara",
+      "password": "12345",
+      "image": "sara.jpg"
+    }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 24,
+      "email": "will@test.com",
+      "name": "Will",
+      "password": "12345",
+      "image": "will.jpg"
+    }
   }
 ]
