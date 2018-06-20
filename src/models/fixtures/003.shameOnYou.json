@@ -34,5 +34,23 @@
             "shame_giver_id": 2,
             "updoots": 10
         }
+    },
+    {
+        "model": "ShameOnYou",
+        "data": {
+            "description": "For losing HQ for us",
+            "shame_receiver_id": 3,
+            "shame_giver_id": 14,
+            "updoots": 5
+        }
+    },
+    {
+        "model": "ShameOnYou",
+        "data": {
+            "description": "For forgetting tacos that one time",
+            "shame_receiver_id": 1,
+            "shame_giver_id": 4,
+            "updoots": 10
+        }
     }
 ]

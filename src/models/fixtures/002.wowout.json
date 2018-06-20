@@ -70,5 +70,14 @@
       "wowout_giver_id": 15,
       "updoots": 11
     }
+  },
+  {
+    "model": "Wowout",
+    "data": {
+      "description": "For doing most of the work on this project",
+      "wowout_receiver_id": 2,
+      "wowout_giver_id": 7,
+      "updoots": 8
+    }
   }
 ]
