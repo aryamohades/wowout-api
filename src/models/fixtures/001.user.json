@@ -229,5 +229,15 @@
       "password": "12345",
       "image": "will.jpg"
     }
+  },
+  {
+    "model": "User",
+    "data": {
+      "id": 25,
+      "email": "sanjay@test.com",
+      "name": "Sanjay",
+      "password": "12345",
+      "image": "user.jpg"
+    }
   }
 ]
